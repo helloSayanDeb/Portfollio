@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayan Deb | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['DM Sans', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            colors: {
+              metal: {
+                900: '#0a0a0a',
+                800: '#1a1a1a',
+                700: '#2a2a2a',
+                100: '#e5e5e5',
+              }
+            },
+            backgroundImage: {
+              'metal-gradient': 'linear-gradient(145deg, #1a1a1a, #0a0a0a)',
+              'metal-sheen': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Hide scrollbar for cleaner aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+      }
+
+      .perspective-container {
+        perspective: 1800px;
+        transform-style: preserve-3d;
+      }
+
+      .card-3d {
+        transform-style: preserve-3d;
+        will-change: transform;
+        backface-visibility: hidden; /* Helps with performance */
+      }
+      
+      .text-glow {
+        text-shadow: 0 0 20px rgba(255,255,255,0.1);
+      }
+
+      /* Brushed Metal Texture Class */
+      .brushed-metal {
+        background-color: #0a0a0a;
+        background-image: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(255, 255, 255, 0.02) 2px,
+          rgba(255, 255, 255, 0.02) 4px
+        );
+        box-shadow: 
+          inset 1px 1px 0 0 rgba(255,255,255,0.15),
+          inset -1px -1px 0 0 rgba(0,0,0,0.8),
+          10px 10px 30px -5px rgba(0,0,0,0.8);
+      }
+
+      .metal-edge-highlight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.4), rgba(255,255,255,0));
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/",
+    "gsap": "https://esm.sh/gsap@^3.14.2"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
