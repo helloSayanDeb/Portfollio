@@ -1,4 +1,4 @@
-import { Project } from './types';
+import { Project } from '@/types';
 
 export const projects: Project[] = [
   {
@@ -10,7 +10,9 @@ export const projects: Project[] = [
     features: ["Real-time WebGL Rendering", "Predictive Analytics", "Custom Widget Engine", "Dark Mode First", "Role-Based Access Control", "Automated Reporting"],
     techStack: ["React", "Three.js", "Python", "TensorFlow", "PostgreSQL"],
     stats: [{ label: "Data Points", value: "10M+" }, { label: "Latency", value: "<50ms" }],
-    projectNumber: "01/15"
+    projectNumber: "01/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 2,
@@ -21,7 +23,9 @@ export const projects: Project[] = [
     features: ["WebGPU Accelerated", "Real-time Ray Tracing", "PBR Material System", "Cloud Baking", "Collaborative Editing", "Asset Compression"],
     techStack: ["WebGPU", "Rust", "WASM", "TypeScript", "Node.js"],
     stats: [{ label: "FPS", value: "60" }, { label: "Render Time", value: "0.2s" }],
-    projectNumber: "02/15"
+    projectNumber: "02/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 3,
@@ -32,7 +36,9 @@ export const projects: Project[] = [
     features: ["Zero-Knowledge Architecture", "Client-Side Encryption", "Biometric Authentication", "Audit Logs", "Secure Sharing", "Offline Access"],
     techStack: ["Electron", "React", "Sodium", "Go", "Docker"],
     stats: [{ label: "Encryption", value: "AES-256" }, { label: "Uptime", value: "99.99%" }],
-    projectNumber: "03/15"
+    projectNumber: "03/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 4,
@@ -43,7 +49,9 @@ export const projects: Project[] = [
     features: ["Schema Federation", "Query Complexity Analysis", "Distributed Tracing", "Automatic Caching", "Subscription Support", "Legacy REST Wrapper"],
     techStack: ["GraphQL", "Apollo", "Redis", "Kubernetes", "Node.js"],
     stats: [{ label: "Requests/sec", value: "50k" }, { label: "Services", value: "100+" }],
-    projectNumber: "04/15"
+    projectNumber: "04/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 5,
@@ -54,7 +62,9 @@ export const projects: Project[] = [
     features: ["WCAG 2.1 AA Compliant", "Theming Engine", "Data Grid Components", "Interactive Charts", "Figma Integration", "Unit Tested"],
     techStack: ["React", "Storybook", "Styled Components", "Jest", "TypeScript"],
     stats: [{ label: "Components", value: "150+" }, { label: "Downloads", value: "12k" }],
-    projectNumber: "05/15"
+    projectNumber: "05/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 6,
@@ -65,7 +75,9 @@ export const projects: Project[] = [
     features: ["Headless Architecture", "One-Click Checkout", "Inventory Sync", "Omnichannel Support", "Loyalty Program", "Fraud Detection"],
     techStack: ["Next.js", "Stripe API", "Sanity CMS", "Vercel", "Postgres"],
     stats: [{ label: "Conversion", value: "+15%" }, { label: "Load Time", value: "0.8s" }],
-    projectNumber: "06/15"
+    projectNumber: "06/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 7,
@@ -76,7 +88,9 @@ export const projects: Project[] = [
     features: ["WebAuthn Support", "Biometric Login", "Magic Links", "Device Management", "Social Login", "Session Control"],
     techStack: ["Go", "WebAuthn", "Redis", "Postgres", "React"],
     stats: [{ label: "Security", value: "High" }, { label: "Success Rate", value: "99.8%" }],
-    projectNumber: "07/15"
+    projectNumber: "07/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 8,
@@ -87,7 +101,9 @@ export const projects: Project[] = [
     features: ["Sub-20ms Latency", "Lossless Audio", "Multi-Channel Support", "DAW Integration", "Peer-to-Peer", "Jitter Buffer"],
     techStack: ["C++", "WebRTC", "WASM", "Node.js", "Socket.io"],
     stats: [{ label: "Latency", value: "15ms" }, { label: "Quality", value: "96kHz" }],
-    projectNumber: "08/15"
+    projectNumber: "08/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 9,
@@ -98,7 +114,9 @@ export const projects: Project[] = [
     features: ["Session Replay", "Click Heatmaps", "Scroll Maps", "Funnel Analysis", "Error Tracking", "Privacy Masking"],
     techStack: ["JavaScript", "ClickHouse", "Kafka", "React", "AWS"],
     stats: [{ label: "Events/Day", value: "1B" }, { label: "Storage", value: "PB Scale" }],
-    projectNumber: "09/15"
+    projectNumber: "09/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 10,
@@ -109,7 +127,9 @@ export const projects: Project[] = [
     features: ["Variant Calling", "Genome Visualization", "Batch Processing", "Secure Storage", "Metadata Search", "Export Tools"],
     techStack: ["Python", "BioPython", "AWS Batch", "DynamoDB", "React"],
     stats: [{ label: "Accuracy", value: "99.9%" }, { label: "Processing", value: "24h" }],
-    projectNumber: "10/15"
+    projectNumber: "10/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 11,
@@ -120,7 +140,9 @@ export const projects: Project[] = [
     features: ["Drag-and-Drop", "Conditional Logic", "API Validation", "PDF Generation", "E-signature", "Analytics"],
     techStack: ["Vue.js", "Laravel", "MySQL", "Redis", "Tailwind"],
     stats: [{ label: "Submissions", value: "5M+" }, { label: "Uptime", value: "100%" }],
-    projectNumber: "11/15"
+    projectNumber: "11/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 12,
@@ -131,7 +153,9 @@ export const projects: Project[] = [
     features: ["Content Modeling", "Multilingual", "Version Control", "Workflow Approval", "Asset Management", "CDN Integration"],
     techStack: ["Node.js", "MongoDB", "Elasticsearch", "React", "Express"],
     stats: [{ label: "API Resp", value: "20ms" }, { label: "Scalability", value: "Auto" }],
-    projectNumber: "12/15"
+    projectNumber: "12/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 13,
@@ -142,7 +166,9 @@ export const projects: Project[] = [
     features: ["AR Wayfinding", "WiFi Fingerprinting", "POI Search", "Accessibility Routes", "Offline Maps", "Analytics"],
     techStack: ["Swift", "ARKit", "Kotlin", "ARCore", "Python"],
     stats: [{ label: "Precision", value: "1m" }, { label: "Venues", value: "50+" }],
-    projectNumber: "13/15"
+    projectNumber: "13/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 14,
@@ -153,7 +179,9 @@ export const projects: Project[] = [
     features: ["Physics Based", "Layout Morphing", "Scroll Triggers", "SVG Morphing", "Timeline Control", "React Hooks"],
     techStack: ["TypeScript", "React", "Web Animations API", "Math.js"],
     stats: [{ label: "Size", value: "5kb" }, { label: "Stars", value: "4.5k" }],
-    projectNumber: "14/15"
+    projectNumber: "14/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   },
   {
     id: 15,
@@ -164,6 +192,13 @@ export const projects: Project[] = [
     features: ["Global Edge", "Instant Rollback", "Preview URLs", "Log Streaming", "DDoS Protection", "Git Integration"],
     techStack: ["Go", "Rust", "Docker", "Kubernetes", "Nginx"],
     stats: [{ label: "Build Time", value: "10s" }, { label: "Deploy Time", value: "2s" }],
-    projectNumber: "15/15"
+    projectNumber: "15/15",
+    demoUrl: "https://github.com/helloSayanDeb",
+    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
   }
 ];
+
+export function getProjectById(id: number | string): Project | undefined {
+  const numericId = typeof id === 'string' ? parseInt(id, 10) : id;
+  return projects.find(p => p.id === numericId);
+}

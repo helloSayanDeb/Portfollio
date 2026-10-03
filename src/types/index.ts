@@ -15,6 +15,8 @@ export interface Project {
   techStack: string[];
   stats: ProjectStats[];
   projectNumber: string;
+  demoUrl?: string;
+  githubUrl?: string;
 }
 
 export interface CardProps {
