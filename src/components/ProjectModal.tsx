@@ -118,7 +118,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        handleModalClose();
+        onClose();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -127,7 +127,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       if (ctx) ctx.revert();
     };
-  }, [isStandalone]);
+  }, [isStandalone, onClose]);
 
   const handleModalClose = () => {
     if (isStandalone) {

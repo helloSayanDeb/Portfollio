@@ -17,6 +17,11 @@ export interface Project {
   projectNumber: string;
   demoUrl?: string;
   githubUrl?: string;
+  isPrivate?: boolean;
+  issueTag?: string;
+  category?: string;
+  featured?: boolean;
+  highlights?: string[];
 }
 
 export interface CardProps {

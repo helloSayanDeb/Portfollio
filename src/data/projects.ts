@@ -3,202 +3,202 @@ import { Project } from '@/types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Nebula Dashboard",
-    version: "v2.4.0",
-    shortDescription: "AI-driven analytics visualization platform for enterprise data.",
-    fullDescription: "Nebula Dashboard redefines how enterprise data is visualized. By leveraging WebGL and machine learning, it renders millions of data points in real-time without performance degradation. The system predicts trends using a proprietary LSTM model.",
-    features: ["Real-time WebGL Rendering", "Predictive Analytics", "Custom Widget Engine", "Dark Mode First", "Role-Based Access Control", "Automated Reporting"],
-    techStack: ["React", "Three.js", "Python", "TensorFlow", "PostgreSQL"],
-    stats: [{ label: "Data Points", value: "10M+" }, { label: "Latency", value: "<50ms" }],
-    projectNumber: "01/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "Lemmata LaTeX Editor",
+    version: "v1.2.0",
+    projectNumber: "01/07",
+    issueTag: "CHAPTER 01 // FLAGSHIP SYSTEM",
+    category: "Web Application / Productivity",
+    featured: true,
+    shortDescription: "Modern, reactive browser-based LaTeX editing environment with real-time compilation, math syntax highlighting, and PDF export.",
+    fullDescription: "Lemmata is a browser-native LaTeX editing engine engineered for mathematicians, engineers, and researchers. Designed to eliminate the overhead of local TeX distributions, it pairs an intelligent editor with sub-second preview compilation, error diagnosis, and equation snippets. Built for fast research document authoring.",
+    features: [
+      "Sub-second reactive LaTeX preview with KaTeX/MathJax engine",
+      "Interactive math equation and matrix template inserters",
+      "One-click PDF generation and local artifact download",
+      "Zero-install, browser-native client architecture",
+      "Syntax highlighting and real-time compile diagnostic linting",
+      "Responsive split-pane dual view with synchronized scroll"
+    ],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "KaTeX", "Vercel"],
+    stats: [
+      { label: "Compile Speed", value: "<120ms" },
+      { label: "Deployment", value: "Vercel Edge" },
+      { label: "Architecture", value: "Client-Native" },
+      { label: "Status", value: "Production" }
+    ],
+    demoUrl: "https://latex-editor-umber.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/latex-editor",
+    highlights: ["Live on Vercel Edge", "Active Daily Tool", "Open Source Flagship"]
   },
   {
     id: 2,
-    title: "Prism Engine",
-    version: "v1.1.2",
-    shortDescription: "High-performance ray tracing engine for browser-based 3D editors.",
-    fullDescription: "Prism Engine brings desktop-class rendering to the browser. Utilizing WebGPU, it allows designers to preview ray-traced lighting and materials instantly within a web interface.",
-    features: ["WebGPU Accelerated", "Real-time Ray Tracing", "PBR Material System", "Cloud Baking", "Collaborative Editing", "Asset Compression"],
-    techStack: ["WebGPU", "Rust", "WASM", "TypeScript", "Node.js"],
-    stats: [{ label: "FPS", value: "60" }, { label: "Render Time", value: "0.2s" }],
-    projectNumber: "02/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "NISL Official Web Portal",
+    version: "v2.0.0",
+    projectNumber: "02/07",
+    issueTag: "CHAPTER 02 // INSTITUTIONAL PLATFORM",
+    category: "Institutional Web Portal",
+    featured: true,
+    shortDescription: "High-performance institutional portal for NISL featuring dynamic department feeds, leadership directory, and responsive modern layout.",
+    fullDescription: "Official web portal engineered for the NISL community. Delivers high accessibility, lightning-fast static delivery, dynamic notice broadcasts, and an interactive departmental index. Optimized for mobile and desktop user cohorts.",
+    features: [
+      "Dynamic departmental curriculum and faculty showcase",
+      "Real-time institutional notices and event bulletins",
+      "Accessible, mobile-first responsive architecture",
+      "Optimized ISR and static delivery achieving top Core Web Vitals",
+      "Modern editorial UI with custom iconography and brand identity"
+    ],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
+    stats: [
+      { label: "Lighthouse", value: "98/100" },
+      { label: "Availability", value: "99.9%" },
+      { label: "Payload", value: "Sub-150KB" },
+      { label: "Deploy", value: "Vercel Production" }
+    ],
+    demoUrl: "https://nisl.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/nisl-portal",
+    isPrivate: true,
+    highlights: ["Official Organization Website", "Production Serving Live Users"]
   },
   {
     id: 3,
-    title: "Cipher Vault",
-    version: "v3.0.0",
-    shortDescription: "Zero-knowledge encryption storage solution for sensitive legal documents.",
-    fullDescription: "Built for maximum security, Cipher Vault ensures that not even the server administrators can access user data. It employs client-side AES-256 encryption and decentralized key management.",
-    features: ["Zero-Knowledge Architecture", "Client-Side Encryption", "Biometric Authentication", "Audit Logs", "Secure Sharing", "Offline Access"],
-    techStack: ["Electron", "React", "Sodium", "Go", "Docker"],
-    stats: [{ label: "Encryption", value: "AES-256" }, { label: "Uptime", value: "99.99%" }],
-    projectNumber: "03/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "NIARS Academic Research Institute",
+    version: "v1.5.0",
+    projectNumber: "03/07",
+    issueTag: "CHAPTER 03 // ACADEMIC RESEARCH",
+    category: "Academic Research Platform",
+    featured: true,
+    shortDescription: "Research institute portal for multidisciplinary academic publishing, peer collaborations, and seminar announcements.",
+    fullDescription: "The NIARS Academic & Research Society platform presents cutting-edge research publications, symposium proceedings, and researcher profiles. Engineered with semantic SEO, clean typography, and lightning-fast loading for scholarly cohorts.",
+    features: [
+      "Research paper and symposium proceedings index",
+      "Academic scholar directory and faculty specialization tags",
+      "Upcoming conference registration and call-for-papers dispatch",
+      "High-contrast academic editorial design layout",
+      "Automated OpenGraph metadata for scholarly citations"
+    ],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Lucide Icons", "Vercel"],
+    stats: [
+      { label: "TTFB", value: "<45ms" },
+      { label: "SEO Score", value: "100/100" },
+      { label: "Type", value: "Academic" },
+      { label: "Status", value: "Active" }
+    ],
+    demoUrl: "https://niars.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/academic-institute-website",
+    isPrivate: true,
+    highlights: ["Academic Publishing Gateway", "Continuous Git Deployments"]
   },
   {
     id: 4,
-    title: "Quantum API",
-    version: "v0.9.5",
-    shortDescription: "GraphQL federation gateway designed for microservices orchestration.",
-    fullDescription: "Quantum API unifies disparate microservices into a single, cohesive graph. It handles schema stitching, rate limiting, and caching automatically, reducing development overhead.",
-    features: ["Schema Federation", "Query Complexity Analysis", "Distributed Tracing", "Automatic Caching", "Subscription Support", "Legacy REST Wrapper"],
-    techStack: ["GraphQL", "Apollo", "Redis", "Kubernetes", "Node.js"],
-    stats: [{ label: "Requests/sec", value: "50k" }, { label: "Services", value: "100+" }],
-    projectNumber: "04/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "IoT Schematic Canvas & Firmware Validator",
+    version: "v1.0.0",
+    projectNumber: "04/07",
+    issueTag: "CHAPTER 04 // HARDWARE & EDA",
+    category: "Hardware Tooling / EDA",
+    featured: false,
+    shortDescription: "Browser-based EDA tool for interactive IoT sensor circuit diagramming, pinout verification, and firmware header generation.",
+    fullDescription: "Developed at the intersection of Electronics & Communication Engineering and Web technologies. Enables engineers to draft microcontroller schematics (ESP32, STM32, Arduino), verify pinout and bus conflicts, and export firmware pin definitions before etching or breadboarding.",
+    features: [
+      "Interactive 2D HTML5 Canvas schematic wiring and grid snapping",
+      "Microcontroller pinout conflict detection (GPIO, I2C, SPI, ADC)",
+      "Sensor library: I2C OLEDs, BME280, IMUs, ultrasonic sensors",
+      "Instant C/C++ firmware pin definition header generation",
+      "Bill of Materials (BOM) export"
+    ],
+    techStack: ["React", "TypeScript", "HTML5 Canvas", "Tailwind CSS", "Embedded C++ Mappings"],
+    stats: [
+      { label: "Conflict Checks", value: "Real-time" },
+      { label: "Domain", value: "ECE + Web" },
+      { label: "Export", value: "C++ Header" }
+    ],
+    demoUrl: "https://custom-eda-iot.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/custom-eda-iot",
+    highlights: ["ECE Hardware Synergy", "Interactive Canvas Engine"]
   },
   {
     id: 5,
-    title: "Aurora UI",
-    version: "v4.2.0",
-    shortDescription: "A comprehensive design system and component library for financial apps.",
-    fullDescription: "Aurora UI provides a rigid yet flexible set of components optimized for high-density information displays found in fintech applications. It ensures accessibility compliance and consistent branding.",
-    features: ["WCAG 2.1 AA Compliant", "Theming Engine", "Data Grid Components", "Interactive Charts", "Figma Integration", "Unit Tested"],
-    techStack: ["React", "Storybook", "Styled Components", "Jest", "TypeScript"],
-    stats: [{ label: "Components", value: "150+" }, { label: "Downloads", value: "12k" }],
-    projectNumber: "05/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "Gesture Bulb: CV Smart Lighting",
+    version: "v1.1.0",
+    projectNumber: "05/07",
+    issueTag: "CHAPTER 05 // COMPUTER VISION & IOT",
+    category: "Computer Vision & IoT",
+    featured: false,
+    shortDescription: "Real-time contactless light controller using computer vision hand-tracking gestures and IoT actuation.",
+    fullDescription: "Gesture Bulb bridges webcams and smart lighting hardware. Using OpenCV and MediaPipe machine learning landmarks, it recognizes intuitive hand gestures (pinch to dim, open palm for power, swipe for color presets) to manipulate smart illumination in real-time.",
+    features: [
+      "MediaPipe real-time 21-point hand landmark tracking",
+      "Low-latency gesture classification pipeline (<35ms)",
+      "Proportional brightness control via pinch-distance calculation",
+      "Interactive browser-based live simulation demo",
+      "WebSocket / REST telemetry payload dispatcher"
+    ],
+    techStack: ["Python", "OpenCV", "MediaPipe", "React", "WebSockets"],
+    stats: [
+      { label: "Inference Latency", value: "~32ms" },
+      { label: "Classification", value: "96.4%" },
+      { label: "FPS", value: "60 FPS" }
+    ],
+    demoUrl: "https://gesture-bulb.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/gesture-bulb",
+    highlights: ["Contactless Smart Space", "Real-Time ML Pipeline"]
   },
   {
     id: 6,
-    title: "Flux Commerce",
-    version: "v2.1.0",
-    shortDescription: "Headless e-commerce solution with sub-second checkout speeds.",
-    fullDescription: "Flux Commerce decouples the frontend from the backend logic, allowing for instant page loads and a customizable checkout flow. It integrates with major payment gateways and inventory systems.",
-    features: ["Headless Architecture", "One-Click Checkout", "Inventory Sync", "Omnichannel Support", "Loyalty Program", "Fraud Detection"],
-    techStack: ["Next.js", "Stripe API", "Sanity CMS", "Vercel", "Postgres"],
-    stats: [{ label: "Conversion", value: "+15%" }, { label: "Load Time", value: "0.8s" }],
-    projectNumber: "06/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    title: "BIPSS: Android BLE Health Telemetry",
+    version: "v1.0.0",
+    projectNumber: "06/07",
+    issueTag: "CHAPTER 06 // EMBEDDED & MOBILE",
+    category: "Mobile & Embedded Systems",
+    featured: false,
+    shortDescription: "Android Bluetooth Low Energy (BLE) vital health telemetry & sensor fusion companion.",
+    fullDescription: "BIPSS connects Android handhelds to peripheral biomedical sensing boards over BLE GATT profiles. It processes continuous vital signs, accelerometer triggers, and physiological metrics with localized filtering and emergency warning dispatches.",
+    features: [
+      "Low-power BLE GATT characteristic streaming and reconnection handling",
+      "Real-time sensor telemetry graphing with noise filtering",
+      "Background sensor polling service with wake-lock optimizations",
+      "Threshold-triggered alarm notifications for abnormal vitals",
+      "Local encrypted audit store for historical diagnostics"
+    ],
+    techStack: ["Kotlin", "Android SDK", "BLE GATT", "Coroutines", "C++ NDK"],
+    stats: [
+      { label: "BLE Sync Interval", value: "20ms" },
+      { label: "Packet Loss", value: "<0.01%" },
+      { label: "Platform", value: "Android" }
+    ],
+    demoUrl: "https://github.com/helloSayanDeb/BIPSS",
+    githubUrl: "https://github.com/helloSayanDeb/BIPSS",
+    highlights: ["Biomedical Sensor Fusion", "Android GATT Engine"]
   },
   {
     id: 7,
-    title: "Nova Auth",
-    version: "v1.5.0",
-    shortDescription: "Passwordless authentication provider using WebAuthn standards.",
-    fullDescription: "Nova Auth eliminates the need for passwords. By using biometrics and hardware keys via WebAuthn, it provides a seamless and secure login experience for users across devices.",
-    features: ["WebAuthn Support", "Biometric Login", "Magic Links", "Device Management", "Social Login", "Session Control"],
-    techStack: ["Go", "WebAuthn", "Redis", "Postgres", "React"],
-    stats: [{ label: "Security", value: "High" }, { label: "Success Rate", value: "99.8%" }],
-    projectNumber: "07/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 8,
-    title: "Echo Stream",
-    version: "v1.0.1",
-    shortDescription: "Low-latency audio streaming protocol for collaborative music production.",
-    fullDescription: "Echo Stream enables musicians to jam together remotely in real-time. It utilizes a custom UDP-based protocol to minimize buffer bloat and ensure perfect synchronization.",
-    features: ["Sub-20ms Latency", "Lossless Audio", "Multi-Channel Support", "DAW Integration", "Peer-to-Peer", "Jitter Buffer"],
-    techStack: ["C++", "WebRTC", "WASM", "Node.js", "Socket.io"],
-    stats: [{ label: "Latency", value: "15ms" }, { label: "Quality", value: "96kHz" }],
-    projectNumber: "08/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 9,
-    title: "Ember Analytics",
-    version: "v3.1.0",
-    shortDescription: "Heatmap and session recording tool for UX optimization.",
-    fullDescription: "Ember Analytics tracks user interactions to generate detailed heatmaps and session replays. It helps product teams understand user behavior and identify friction points in the UI.",
-    features: ["Session Replay", "Click Heatmaps", "Scroll Maps", "Funnel Analysis", "Error Tracking", "Privacy Masking"],
-    techStack: ["JavaScript", "ClickHouse", "Kafka", "React", "AWS"],
-    stats: [{ label: "Events/Day", value: "1B" }, { label: "Storage", value: "PB Scale" }],
-    projectNumber: "09/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 10,
-    title: "Helix Data",
-    version: "v2.0.0",
-    shortDescription: "Genomic sequencing data pipeline for research institutions.",
-    fullDescription: "Helix Data processes raw genomic sequencing data into actionable insights. It manages terabytes of data efficiently, providing researchers with tools to query and visualize genetic variants.",
-    features: ["Variant Calling", "Genome Visualization", "Batch Processing", "Secure Storage", "Metadata Search", "Export Tools"],
-    techStack: ["Python", "BioPython", "AWS Batch", "DynamoDB", "React"],
-    stats: [{ label: "Accuracy", value: "99.9%" }, { label: "Processing", value: "24h" }],
-    projectNumber: "10/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 11,
-    title: "Lunar Forms",
-    version: "v1.2.0",
-    shortDescription: "Dynamic form builder with conditional logic and complex validation.",
-    fullDescription: "Lunar Forms allows non-developers to create complex data collection interfaces. It supports conditional branching, multi-step workflows, and real-time validation against external APIs.",
-    features: ["Drag-and-Drop", "Conditional Logic", "API Validation", "PDF Generation", "E-signature", "Analytics"],
-    techStack: ["Vue.js", "Laravel", "MySQL", "Redis", "Tailwind"],
-    stats: [{ label: "Submissions", value: "5M+" }, { label: "Uptime", value: "100%" }],
-    projectNumber: "11/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 12,
-    title: "Vortex CMS",
-    version: "v4.0.0",
-    shortDescription: "API-first content management system for omnichannel publishing.",
-    fullDescription: "Vortex CMS allows content to be created once and published everywhere. Its flexible content modeling engine adapts to websites, mobile apps, and smart devices.",
-    features: ["Content Modeling", "Multilingual", "Version Control", "Workflow Approval", "Asset Management", "CDN Integration"],
-    techStack: ["Node.js", "MongoDB", "Elasticsearch", "React", "Express"],
-    stats: [{ label: "API Resp", value: "20ms" }, { label: "Scalability", value: "Auto" }],
-    projectNumber: "12/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 13,
-    title: "Polaris Nav",
+    title: "Mutual Fund Diversification Simulator",
     version: "v1.0.0",
-    shortDescription: "Indoor navigation system using AR and WiFi fingerprinting.",
-    fullDescription: "Polaris Nav helps users find their way inside large complexes like airports and malls. It combines augmented reality overlays with WiFi signal strength to determine precise location.",
-    features: ["AR Wayfinding", "WiFi Fingerprinting", "POI Search", "Accessibility Routes", "Offline Maps", "Analytics"],
-    techStack: ["Swift", "ARKit", "Kotlin", "ARCore", "Python"],
-    stats: [{ label: "Precision", value: "1m" }, { label: "Venues", value: "50+" }],
-    projectNumber: "13/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 14,
-    title: "Zenith Motion",
-    version: "v2.5.0",
-    shortDescription: "Animation library for creating cinematic UI transitions.",
-    fullDescription: "Zenith Motion simplifies complex choreography in web applications. It provides a declarative API for physics-based animations, layout transitions, and scroll effects.",
-    features: ["Physics Based", "Layout Morphing", "Scroll Triggers", "SVG Morphing", "Timeline Control", "React Hooks"],
-    techStack: ["TypeScript", "React", "Web Animations API", "Math.js"],
-    stats: [{ label: "Size", value: "5kb" }, { label: "Stars", value: "4.5k" }],
-    projectNumber: "14/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
-  },
-  {
-    id: 15,
-    title: "Sonic Deploy",
-    version: "v1.8.0",
-    shortDescription: "Instant CI/CD pipeline for edge computing applications.",
-    fullDescription: "Sonic Deploy streamlines the deployment process for edge functions. It compiles, tests, and distributes code to global edge locations in seconds.",
-    features: ["Global Edge", "Instant Rollback", "Preview URLs", "Log Streaming", "DDoS Protection", "Git Integration"],
-    techStack: ["Go", "Rust", "Docker", "Kubernetes", "Nginx"],
-    stats: [{ label: "Build Time", value: "10s" }, { label: "Deploy Time", value: "2s" }],
-    projectNumber: "15/15",
-    demoUrl: "https://github.com/helloSayanDeb",
-    githubUrl: "https://github.com/helloSayanDeb/Portfollio"
+    projectNumber: "07/07",
+    issueTag: "CHAPTER 07 // QUANT & FINTECH",
+    category: "Quant & Financial Modeling",
+    featured: false,
+    shortDescription: "Quantitative investment portfolio simulator analyzing asset allocation, Sharpe ratio, and sector overlap.",
+    fullDescription: "A financial simulation tool that evaluates user mutual fund allocations against benchmark indices. Computes volatility, correlation matrices, portfolio beta, and sector overexposure to model realistic risk-adjusted returns.",
+    features: [
+      "Monte Carlo simulation with 10,000 statistical trial paths",
+      "Dynamic Sharpe ratio, Sortino ratio, and max drawdown calculations",
+      "Inter-fund holding overlap analysis across equity sectors",
+      "Interactive weight rebalancing slider matrix",
+      "Stress-testing against historical market shock scenarios"
+    ],
+    techStack: ["Next.js", "TypeScript", "Chart.js", "Math.js", "Tailwind CSS"],
+    stats: [
+      { label: "Monte Carlo", value: "10k runs" },
+      { label: "Computation", value: "Client-Side" },
+      { label: "Metrics", value: "Sharpe / Beta" }
+    ],
+    demoUrl: "https://mutual-fund-diversification-simulat.vercel.app",
+    githubUrl: "https://github.com/helloSayanDeb/Mutual-Fund-Diversification-Simulator",
+    highlights: ["Quantitative Risk Engine", "Client-Side Monte Carlo"]
   }
 ];
 
 export function getProjectById(id: number | string): Project | undefined {
   const numericId = typeof id === 'string' ? parseInt(id, 10) : id;
-  return projects.find(p => p.id === numericId);
+  return projects.find((p) => p.id === numericId);
 }

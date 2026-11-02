@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <filter id="ink-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#111111" />
+    </filter>
+    <pattern id="screentone" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.6" fill="#111111" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <!-- Background frame with hard ink drop shadow -->
+  <rect x="4" y="4" width="52" height="52" fill="#F8F8F5" stroke="#111111" stroke-width="4" filter="url(#ink-shadow)"/>
+  <!-- Halftone screentone texture -->
+  <rect x="6" y="6" width="48" height="48" fill="url(#screentone)"/>
+  <!-- Angular manga speed hatch accent -->
+  <polygon points="6,6 24,6 6,24" fill="#111111"/>
+  <!-- Sayan Deb "SD" Monogram in heavy Manga Comic Ink styling -->
+  <text x="30" y="41" font-family="'Bangers', 'Impact', sans-serif" font-size="30" font-weight="900" fill="#F8F8F5" stroke="#111111" stroke-width="3" stroke-linejoin="round" text-anchor="middle" letter-spacing="-1">SD</text>
+  <text x="30" y="41" font-family="'Bangers', 'Impact', sans-serif" font-size="30" font-weight="900" fill="#111111" text-anchor="middle" letter-spacing="-1">SD</text>
+  <!-- Sliced sun mini element in top right -->
+  <circle cx="44" cy="18" r="6" fill="#111111"/>
+  <line x1="38" y1="18" x2="50" y2="18" stroke="#F8F8F5" stroke-width="1.5"/>
+  <line x1="39" y1="20.5" x2="49" y2="20.5" stroke="#F8F8F5" stroke-width="1"/>
+</svg>

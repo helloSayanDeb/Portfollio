@@ -1,6 +1,12 @@
 import { notFound } from 'next/navigation';
-import { getProjectById } from '@/data/projects';
+import { projects, getProjectById } from '@/data/projects';
 import { ProjectModalClient } from './modal-client';
+
+export async function generateStaticParams() {
+  return projects.map((p) => ({
+    id: p.id.toString(),
+  }));
+}
 
 export default async function ProjectModalRoute({
   params,
@@ -16,3 +22,4 @@ export default async function ProjectModalRoute({
 
   return <ProjectModalClient project={project} />;
 }
+

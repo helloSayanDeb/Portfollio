@@ -2,8 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { projects, getProjectById } from '@/data/projects';
-import { ProjectModal } from '@/components/ProjectModal';
-import { ArrowLeft } from 'lucide-react';
+import { OverclockDossierModal } from '@/components/OverclockDossierModal';
 
 interface ProjectPageProps {
   params: Promise<{ id: string }>;
@@ -28,9 +27,9 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.title} (${project.version}) | Sayan Deb Portfolio`,
+    title: `${project.title} (${project.version}) // Sayan Deb Dossier`,
     description: project.fullDescription,
-    keywords: [project.title, ...project.techStack, 'Sayan Deb', 'Creative Engineer'],
+    keywords: [project.title, ...project.techStack, 'Sayan Deb', 'ECE Engineer', 'Kolkata'],
     openGraph: {
       title: `${project.title} - ${project.shortDescription}`,
       description: project.fullDescription,
@@ -48,18 +47,17 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="standalone-page">
-      <div className="standalone-nav">
-        <Link href="/" className="back-link">
-          <ArrowLeft size={16} /> Return to 3D Canvas
-        </Link>
-        <span className="card-version">{project.projectNumber}</span>
-      </div>
+    <main className="oc">
+      <div className="oc-standalone-page">
+        <div className="oc-standalone-nav">
+          <Link href="/" className="oc-btn oc-btn-ghost oc-btn-sm">
+            ← Return to Main Comic Issue
+          </Link>
+          <span className="oc-issue">PROJECT ARCHIVE // {project.projectNumber}</span>
+        </div>
 
-      <ProjectModal 
-        project={project} 
-        isStandalone={true} 
-      />
-    </div>
+        <OverclockDossierModal project={project} isStandalone={true} />
+      </div>
+    </main>
   );
 }

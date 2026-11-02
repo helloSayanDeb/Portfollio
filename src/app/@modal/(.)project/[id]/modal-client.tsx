@@ -3,15 +3,17 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Project } from '@/types';
-import { ProjectModal } from '@/components/ProjectModal';
+import { OverclockDossierModal } from '@/components/OverclockDossierModal';
 
 export function ProjectModalClient({ project }: { project: Project }) {
   const router = useRouter();
 
   return (
-    <ProjectModal 
-      project={project} 
-      onClose={() => router.back()} 
-    />
+    <div className="oc">
+      <OverclockDossierModal
+        project={project}
+        onClose={() => router.back()}
+      />
+    </div>
   );
 }

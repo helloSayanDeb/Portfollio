@@ -220,7 +220,7 @@ export const PortfolioCanvas: React.FC<PortfolioCanvasProps> = ({ projects }) =>
         <div className="footer-container">
           <div className="footer-top">
             <div className="footer-content-left">
-              <h2 className="footer-heading">Let's work together.</h2>
+              <h2 className="footer-heading">Let&apos;s work together.</h2>
               <p className="footer-desc">
                 Available for high-stakes engineering projects, creative development, and technical consulting.
               </p>
