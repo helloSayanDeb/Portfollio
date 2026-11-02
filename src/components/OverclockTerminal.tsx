@@ -24,11 +24,19 @@ export function OverclockTerminal() {
   ]);
   const [commandHistory, setCommandHistory] = useState<string[]>([]);
   const [historyIndex, setHistoryIndex] = useState<number>(-1);
-  const endRef = useRef<HTMLDivElement>(null);
+  const historyBoxRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const isInitialMount = useRef(true);
 
   useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    // Only scroll the internal terminal container, never the outer window viewport
+    if (historyBoxRef.current) {
+      historyBoxRef.current.scrollTop = historyBoxRef.current.scrollHeight;
+    }
   }, [history]);
 
   const executeCommand = (rawCmd: string) => {
@@ -278,7 +286,7 @@ GitHub: https://github.com/helloSayanDeb`,
           ))}
         </div>
 
-        <div className="oc-term-cli-history" role="log" aria-live="polite">
+        <div ref={historyBoxRef} className="oc-term-cli-history" role="log" aria-live="polite">
           {history.map((line, idx) => (
             <div
               key={idx}
@@ -298,7 +306,6 @@ GitHub: https://github.com/helloSayanDeb`,
               {line.text}
             </div>
           ))}
-          <div ref={endRef} />
         </div>
 
         <form onSubmit={handleSubmit} className="oc-term-cli-input">
